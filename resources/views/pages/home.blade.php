@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رؤية للتجارة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'Tajawal', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1a1a1a',
+            accent: '#8B6A00',
+            navbar: '#191919',
+            lightgray: '#F8F9FA'
+          },
+          backgroundImage: {
+            'hero-pattern': "url('/images/hero.jpg')"
+          },
+          animation: {
+            bounceY: 'bounce 2s infinite',
+            pulseSlow: 'pulse 3s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem; /* Fix: prevent section being hidden under navbar */
+    }
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+    }
+    .active {
+      color: #8B6A00;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      function activateNav() {
+        let index = sections.length;
+        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+        navLinks.forEach((link) => link.classList.remove('active'));
+        if (navLinks[index]) navLinks[index].classList.add('active');
+      }
+      activateNav();
+      window.addEventListener('scroll', activateNav);
+    });
+  </script>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 right-0 left-0 z-50 bg-navbar shadow border-b border-accent">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="/images/logo.png" alt="Logo" class="h-20 w-auto">
+      </div>
+      <nav class="flex flex-wrap gap-4 text-sm text-white">
+        <a href="#hero" class="hover:text-accent transition">الرئيسية</a>
+        <a href="#about" class="hover:text-accent transition">من نحن</a>
+        <a href="#values" class="hover:text-accent transition">القيم والأهداف</a>
+        <a href="#achievements" class="hover:text-accent transition">الإنجازات</a>
+        <a href="#systems" class="hover:text-accent transition">شركاتنا</a>
+        <a href="#ceo" class="hover:text-accent transition">كلمة الرئيس</a>
+        <a href="#contact" class="hover:text-accent transition">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="h-20"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-hero-pattern bg-cover bg-center text-white h-screen flex flex-col items-center justify-center text-center px-4"> 
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">رؤية للتجارة</h1>
+    رؤية ملهمة وشراكات مستدامة
+    <p class="text-base md:text-lg max-w-3xl leading-relaxed drop-shadow-md">
+    </p>
+    <a href="#about" class="mt-8 inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">تعرف علينا</a>
+  </section>
+
+  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white" data-aos="fade-up">
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 relative">
+        <img src="/images/about.jpg" alt="About" class="w-full rounded shadow-lg drop-shadow-[0_8px_20px_rgba(139,106,0,0.5)]">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-lg pointer-events-none"></div>
+      </div>
+      <div class="md:w-1/2 text-right">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">من نحن</h2>
+        <p class="text-base md:text-lg leading-loose">
+          برؤية شغوفة، انطلقت «رؤية للتجارة» من قلب العالم الإسلامي لتصنع أثراً يتجاوز السوق إلى خدمة المجتمع منذ تأسيسها أعادت تعريف دور الشراكات بين القطاعات، وقدمت تجربة ترتقي بالعميل وتعزز مفهوم الجودة بنت علاقات متينة وشراكات مستدامة، واضعة المجتمع في صميم رسالتها، ساعية في دعمه وتنميته واليوم، تمضي بثبات، توسع مجالاتها، وتبني منظومات اقتصادية تثري المجتمع وتدفع عجلة ازدهاره.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+
+<!-- Values Section -->
+<section id="values" class="py-20 bg-lightgray" data-aos="fade-up">
+ <br>
+ <br>
+  <div class="container mx-auto px-4 max-w-7xl text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-accent">القيم والأهداف</h2>
+
+    <div class="flex justify-center items-end relative -mx-10 flex-wrap">
+      <!-- Card 1 -->
+    <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal3.jpg" alt="Goal 1" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          الالتزام بعلاقات تجارية متينة وطويلة الأمد
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal2.jpg" alt="Goal 2" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          تقديم حلول تجارية مبتكرة
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal1.jpg" alt="Goal 3" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          تطوير مستمر للمنتجات والخدمات لمواكبة الإبداع        
+        </div>
+      </div>
+      
+
+      <!-- Card 4 -->
+      <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal5.jpg" alt="Goal 4" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          توفير بيئة أعمال محفزة على التميّز والنجاح
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal6.jpg" alt="Goal 5" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          تعزيز المصداقية في التعامل لضمان ثقة العملاء
+        </div>
+      </div>
+      <!-- Card 6 -->
+       <div class="relative w-64 h-64 rounded-3xl overflow-hidden drop-shadow-xl transition-transform duration-300 transform hover:scale-105 hover:z-50 -ml-20 z-20">
+        <img src="/images/goal4.jpg" alt="Goal 6" class="w-full h-full object-cover rounded-3xl">
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-accent to-transparent rounded-b-3xl pointer-events-none"></div>
+        <div class="absolute bottom-4 right-4 text-white text-sm font-bold px-3 py-2">
+          تحمل المسؤولية الاجتماعية والاقتصادية تجاه المجتمع
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+</section>
+  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20 bg-white" data-aos="fade-up">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">الإنجازات</h2>
+            <img src="/images/achievements.png" alt="Achievements" class="mx-auto mb-8">
+
+    </div>
+  </section>
+
+  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+
+  <!-- Systems Section -->
+<section id="systems" class="scroll-mt-24 py-20 bg-lightgray" data-aos="fade-up">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-accent">شركاتنا</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
+      <img src="/images/logo1.png" alt="Logo 1" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo2.png" alt="Logo 2" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo3.png" alt="Logo 3" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo4.png" alt="Logo 4" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo5.png" alt="Logo 5" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo6.png" alt="Logo 6" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+    </div>
+  </div>
+</section>
+
+
+  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+
+   <!-- CEO Message Section -->
+<section id="ceo" class="py-20 bg-white" data-aos="fade-up">
+  <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- CEO Image on the left -->
+    <div class="md:w-1/2 w-full">
+      <img src="/images/ceo.jpg" alt="CEO" class="w-full h-auto rounded-3xl drop-shadow-[12px_0_20px_rgba(139,106,0,0.4)]">
+      <p class="text-lg font-semibold mt-1 mb-4 text-center">مصلح بن صالح السني<br><span class="text-primary">رئيس مجلس الإدارة</span></p>
+    </div>
+
+    <!-- CEO Text -->
+    <div class="w-full text-right">
+      <h2 class="text-3xl md:text-4xl font-bold text-accent mb-2">كلمة الرئيس</h2>
+      
+      <p class="text-base md:text-lg leading-loose text-gray-800">
+        تشهد المملكة العربية السعودية في هذه المرحلة تحولات جوهرية على مختلف الأصعدة والقطاعات، وذلك انطلاقاً من التطلعات الطموحة لرؤية المملكة 2030، 
+        وبما يتوافق مع هذا التغيير، قمنا بإعادة هيكلة سياساتنا الإدارية لتتماشى مع الإنجازات والأهداف المنشودة للرؤية، 
+        ونطمح من خلال هذا التوجه إلى تحقيق الريادة والتميز في مجالات أعمالنا الحديثة.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+ <!-- Footer Section -->
+<footer class="bg-navbar text-white py-16">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16">
+
+    <!-- Left Side: Company Name & Contact Info -->
+    <div class="text-center lg:text-right space-y-4 lg:w-1/4">
+      <h3 class="text-accent font-bold text-xl mb-2">المقر الرئيسي</h3>
+      <p class="text-base leading-relaxed">
+        المملكة العربية السعودية - جدة - طريق الملك عبد الله<br>
+        برج الزقزوق للأعمال - الطابق العاشر - مكتب رقم 1003
+      </p>
+      <div class="mt-6">
+        <img src="/images/vision2030.png" alt="Vision 2030" class="h-28 mx-auto lg:mx-0" />
+        <p class="text-sm text-gray-400 mt-1">المملكة العربية السعودية</p>
+      </div>
+    </div>
+
+    <!-- Center: Logos List + Small logos below -->
+    <div class="flex flex-col items-center lg:items-center space-y-6 lg:w-1/3">
+
+      <ul class="space-y-4 font-semibold text-lg text-white rtl">
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>قطرة خير
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision Global
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>رؤية للتسويق
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision IT Solution
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>أميدالا
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision Logistic
+        </li>
+      </ul>
+
+      <!-- Small logos below the list -->
+      <div class="flex gap-6 mt-6 rtl flex-wrap justify-center">
+        <img src="/images/logo1.png" alt="Vision Logistic" class="h-10" />
+        <img src="/images/logo2.png" alt="Amidala" class="h-10" />
+        <img src="/images/logo3.png" alt="Vision IT Solution" class="h-10" />
+        <img src="/images/logo4.png" alt="Vision Marketing" class="h-10" />
+        <img src="/images/logo5.png" alt="Vision Global" class="h-10" />
+        <img src="/images/logo6.png" alt="قطرة خير" class="h-10" />
+      </div>
+
+      <!-- Main Trade Vision Logo below -->
+      <div class="mt-6">
+        <img src="/images/logo.png" alt="Trade Vision Logo" class="h-20 mx-auto" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Contact Us Section -->
+  <div class="border-t border-accent mt-12 pt-6 container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-right gap-6">
+      <div>
+        <p class="font-bold text-accent mb-1">معلومات التواصل</p>
+        <p>جدة - طريق الملك عبد الله - برج الزقزوق للأعمال</p>
+        <p>البريد الإلكتروني: <a href="mailto:info@vision.com" class="underline text-accent">info@vision.com</a></p>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400">&copy; 2025 رؤية للتجارة – جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+</html>
