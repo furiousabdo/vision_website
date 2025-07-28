@@ -67,9 +67,42 @@
       window.addEventListener('scroll', activateNav);
     });
   </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    const navbar = document.getElementById('navbar');
 
+    function activateNav() {
+      let index = sections.length;
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+      navLinks.forEach((link) => link.classList.remove('active'));
+      if (navLinks[index]) navLinks[index].classList.add('active');
+    }
+
+    function handleNavbarBackground() {
+      if (window.scrollY > 50) {
+        navbar.classList.remove('bg-transparent');
+        navbar.classList.add('bg-navbar', 'shadow', 'border-b', 'border-accent');
+      } else {
+        navbar.classList.add('bg-transparent');
+        navbar.classList.remove('bg-navbar', 'shadow', 'border-b', 'border-accent');
+      }
+    }
+
+    activateNav();
+    handleNavbarBackground();
+
+    window.addEventListener('scroll', () => {
+      activateNav();
+      handleNavbarBackground();
+    });
+  });
+</script>
+
+<section id="hero" class="relative bg-hero-pattern bg-cover bg-center text-white h-screen flex items-end justify-start text-right px-4 pb-24">
   <!-- Navbar -->
-  <header class="fixed top-0 right-0 left-0 z-50 bg-navbar shadow border-b border-accent">
+<header id="navbar" class="fixed top-0 right-0 left-0 z-50 bg-transparent transition-colors duration-300">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center gap-2">
         <img src="/images/logo.png" alt="Logo" class="h-20 w-auto">
@@ -89,7 +122,7 @@
   <div class="h-20"></div>
 
   <!-- Hero Section -->
-<section id="hero" class="relative bg-hero-pattern bg-cover bg-center text-white h-screen flex items-end justify-start text-right px-4 pb-24">
+
   <div class="max-w-xl border-r-8 pr-10" style="border-color: #d6b94a;">
     <h1 class="text-6xl md:text-7xl font-bold mb-4 drop-shadow-lg text-white">رؤية للتجارة</h1>
     <p class="text-2xl md:text-3xl leading-relaxed drop-shadow-md" style="color: #d6b94a;">
