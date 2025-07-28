@@ -110,9 +110,9 @@
       <nav class="flex flex-wrap gap-4 text-sm text-white">
         <a href="#hero" class="hover:text-accent transition">الرئيسية</a>
         <a href="#about" class="hover:text-accent transition">من نحن</a>
-        <a href="#values" class="hover:text-accent transition">القيم والأهداف</a>
-        <a href="#achievements" class="hover:text-accent transition">الإنجازات</a>
         <a href="#systems" class="hover:text-accent transition">شركاتنا</a>
+        <a href="#achievements" class="hover:text-accent transition">الإنجازات</a>
+        <a href="#values" class="hover:text-accent transition">القيم والأهداف</a>
         <a href="#ceo" class="hover:text-accent transition">كلمة الرئيس</a>
         <a href="#contact" class="hover:text-accent transition">تواصل معنا</a>
       </nav>
