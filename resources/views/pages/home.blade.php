@@ -123,12 +123,17 @@
 
   <!-- Hero Section -->
 
- <div class="max-w-xl border-r-8 pr-10 rounded mr-20" style="border-color:rgb(168, 150, 76);">
+ <div class="max-w-xl border-r-8 pr-10 rounded mr-20 relative -top-28" style="border-color:rgb(168, 150, 76);">
   <h1 class="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg text-white">رؤية للتجارة</h1>
   <p class="text-2xl md:text-4xl leading-relaxed drop-shadow-md" style="color:rgb(168, 150, 76);">
     رؤية ملهمة وشراكات مستدامة
   </p>
 </div>
+
+<!-- Rotated and Positioned Shape Image -->
+<img src="/images/bgshapes.png"
+     class="absolute right-40 top-[990px] -rotate-90 w-[200px] z-10"
+     alt="Decorative Shape" />
 
 <div class="absolute bottom-0 right-20 translate-y-1/4 h-3 w-1/3 bg-accent z-10"></div>
 </section>
@@ -312,7 +317,11 @@
 
     <!-- CEO Text -->
     <div class="w-full text-right">
-      <h2 class="text-3xl md:text-4xl font-bold text-accent mb-2">كلمة الرئيس</h2>
+    
+      <div class="flex items-center space-x-3">
+        <span class="w-2 h-10 bg-accent rounded ml-3"></span>
+        <h2 class="text-3xl md:text-4xl font-bold text-accent">كلمة الرئيس</h2>
+      </div>
       
       <p class="text-base md:text-lg leading-loose text-gray-800">
         تشهد المملكة العربية السعودية في هذه المرحلة تحولات جوهرية على مختلف الأصعدة والقطاعات، وذلك انطلاقاً من التطلعات الطموحة لرؤية المملكة 2030، 
@@ -324,63 +333,76 @@
   </div>
 </section>
 
- <!-- Footer Section -->
-<section class="bg-navbar text-white py-16">
-  <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16">
+<div class="flex items-center justify-start my-16 px-12">
+  <!-- Wider line with padding -->
+  <hr class="border-t-4 border-accent w-[50%]">
+
+  <!-- Dot at the end -->
+  <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
+</div>
+<!-- Footer Section -->
+<section class="text-black py-16">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
 
     <!-- Left Side: Company Name & Contact Info -->
-    <div class="text-center lg:text-right space-y-4 lg:w-1/4">
-      <h3 class="text-accent font-bold text-xl mb-2">المقر الرئيسي</h3>
-      <p class="text-base leading-relaxed">
+    <div class="text-center lg:text-right space-y-4 lg:w-1/3">
+      <div class="flex items-center space-x-3">
+        <span class="w-2 h-10 bg-accent rounded ml-3"></span>
+        <h2 class="text-3xl md:text-4xl font-bold text-accent">المقر الرئيسي</h2>
+       
+      </div>
+       <p class="text-base leading-relaxed">
         المملكة العربية السعودية - جدة - طريق الملك عبد الله<br>
         برج الزقزوق للأعمال - الطابق العاشر - مكتب رقم 1003
       </p>
       <div class="mt-6">
-        <img src="/images/vision2030.png" alt="Vision 2030" class="h-28 mx-auto lg:mx-0" />
+        <img src="/images/vision2030.png" alt="Vision 2030" class="h-40 mx-auto lg:mx-0" />
       </div>
     </div>
 
-    <!-- Center: Logos List + Small logos below -->
-    <div class="flex flex-col items-center lg:items-center space-y-6 lg:w-1/3">
+    <!-- Center: Company List and Logos -->
+    <div class="flex flex-col items-center text-center space-y-6 lg:w-1/3">
 
-      <ul class="space-y-4 font-semibold text-lg text-white rtl">
-        <li class="flex items-center gap-2">
+      <!-- Company List -->
+      <ul class="space-y-3 font-semibold text-lg">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>قطرة خير
         </li>
-        <li class="flex items-center gap-2">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision Global
         </li>
-        <li class="flex items-center gap-2">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>رؤية للتسويق
         </li>
-        <li class="flex items-center gap-2">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision IT Solution
         </li>
-        <li class="flex items-center gap-2">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>أميدالا
         </li>
-        <li class="flex items-center gap-2">
+        <li class="flex items-center gap-2 justify-center">
           <span class="w-1.5 h-7 bg-accent inline-block rounded"></span>Vision Logistic
         </li>
       </ul>
 
-      <!-- Small logos below the list -->
-      <div class="flex gap-6 mt-6 rtl flex-wrap justify-center">
-        <img src="/images/logo1.png" alt="Vision Logistic" class="h-10" />
-        <img src="/images/logo2.png" alt="Amidala" class="h-10" />
-        <img src="/images/logo3.png" alt="Vision IT Solution" class="h-10" />
-        <img src="/images/logo4.png" alt="Vision Marketing" class="h-10" />
-        <img src="/images/logo5.png" alt="Vision Global" class="h-10" />
-        <img src="/images/logo6.png" alt="قطرة خير" class="h-10" />
+      <!-- Logos directly below the list -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <img src="/images/logo1.png" alt="Vision Logistic" class="h-14" />
+        <img src="/images/logo2.png" alt="Amidala" class="h-14" />
+        <img src="/images/logo3.png" alt="Vision IT Solution" class="h-14" />
+        <img src="/images/logo4.png" alt="Vision Marketing" class="h-14" />
+        <img src="/images/logo5.png" alt="Vision Global" class="h-14" />
+        <img src="/images/logo6.png" alt="قطرة خير" class="h-14" />
       </div>
 
-      <!-- Main Trade Vision Logo below -->
-      <div class="mt-6">
+      <!-- Main Trade Vision Logo -->
+      <div>
         <img src="/images/logo.png" alt="Trade Vision Logo" class="h-20 mx-auto" />
       </div>
     </div>
   </div>
 </section>
+
 
 
 <footer class="bg-[#d6b94a] text-white py-8">  
