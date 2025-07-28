@@ -47,7 +47,7 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-[url('/images/patter.png')] bg-repeat bg-top bg-fixed">
   <script>
     AOS.init({
       duration: 800,
@@ -89,13 +89,19 @@
   <div class="h-20"></div>
 
   <!-- Hero Section -->
-  <section id="hero" class="relative bg-hero-pattern bg-cover bg-center text-white h-screen flex flex-col items-center justify-center text-center px-4"> 
-    <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">رؤية للتجارة</h1>
-    رؤية ملهمة وشراكات مستدامة
-    <p class="text-base md:text-lg max-w-3xl leading-relaxed drop-shadow-md">
+<section id="hero" class="relative bg-hero-pattern bg-cover bg-center text-white h-screen flex items-end justify-start text-right px-4 pb-24">
+  <div class="max-w-xl border-r-8 pr-10" style="border-color: #d6b94a;">
+    <h1 class="text-6xl md:text-7xl font-bold mb-4 drop-shadow-lg text-white">رؤية للتجارة</h1>
+    <p class="text-2xl md:text-3xl leading-relaxed drop-shadow-md" style="color: #d6b94a;">
+      رؤية ملهمة وشراكات مستدامة
     </p>
-    <a href="#about" class="mt-8 inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">تعرف علينا</a>
-  </section>
+    <a href="#about" class="mt-8 inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">تعرف علينا</a>
+  </div>
+</section>
+
+
+
+
 
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
@@ -240,7 +246,7 @@
 </section>
 
  <!-- Footer Section -->
-<footer class="bg-navbar text-white py-16">
+<section class="bg-navbar text-white py-16">
   <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-16">
 
     <!-- Left Side: Company Name & Contact Info -->
@@ -252,7 +258,6 @@
       </p>
       <div class="mt-6">
         <img src="/images/vision2030.png" alt="Vision 2030" class="h-28 mx-auto lg:mx-0" />
-        <p class="text-sm text-gray-400 mt-1">المملكة العربية السعودية</p>
       </div>
     </div>
 
@@ -296,18 +301,12 @@
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Bottom Contact Us Section -->
-  <div class="border-t border-accent mt-12 pt-6 container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-right gap-6">
-      <div>
-        <p class="font-bold text-accent mb-1">معلومات التواصل</p>
-        <p>جدة - طريق الملك عبد الله - برج الزقزوق للأعمال</p>
-        <p>البريد الإلكتروني: <a href="mailto:info@vision.com" class="underline text-accent">info@vision.com</a></p>
-      </div>
 
-      <div>
-        <p class="text-xs text-gray-400">&copy; 2025 رؤية للتجارة – جميع الحقوق محفوظة</p>
+<footer class="bg-[#d6b94a] text-white py-8">  
+  <div class="text-center">
+        <p class="text-xs text-white-400">&copy; 2025 رؤية للتجارة – جميع الحقوق محفوظة</p>
       </div>
     </div>
   </div>
