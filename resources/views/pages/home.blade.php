@@ -47,7 +47,7 @@
     }
   </style>
 </head>
-<body class="bg-[url('/images/patter.png')] bg-repeat bg-top bg-fixed">
+<body class="bg-[url('/images/pattern.png')] bg-top">
   <script>
     AOS.init({
       duration: 800,
@@ -139,7 +139,7 @@
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-white" data-aos="fade-up">
+  <section id="about" class="py-20" data-aos="fade-up">
     <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
       <div class="md:w-1/2 relative">
         <img src="/images/about.jpg" alt="About" class="w-full rounded shadow-lg drop-shadow-[0_8px_20px_rgba(139,106,0,0.5)]">
@@ -157,7 +157,7 @@
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
 <!-- Values Section -->
-<section id="values" class="py-20 bg-lightgray" data-aos="fade-up">
+<section id="values" class="py-20" data-aos="fade-up">
  <br>
  <br>
   <div class="container mx-auto px-4 max-w-7xl text-center">
@@ -226,7 +226,7 @@
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
   <!-- Achievements Section -->
-  <section id="achievements" class="py-20 bg-white" data-aos="fade-up">
+  <section id="achievements" class="py-20" data-aos="fade-up">
     <div class="container mx-auto px-4 max-w-4xl text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">الإنجازات</h2>
             <img src="/images/achievements.png" alt="Achievements" class="mx-auto mb-8">
@@ -237,7 +237,7 @@
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
   <!-- Systems Section -->
-<section id="systems" class="scroll-mt-24 py-20 bg-lightgray" data-aos="fade-up">
+<section id="systems" class="scroll-mt-24 py-20" data-aos="fade-up">
   <div class="container mx-auto px-4 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12 text-accent">شركاتنا</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
@@ -255,7 +255,7 @@
   <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
    <!-- CEO Message Section -->
-<section id="ceo" class="py-20 bg-white" data-aos="fade-up">
+<section id="ceo" class="py-20" data-aos="fade-up">
   <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
     
     <!-- CEO Image on the left -->
