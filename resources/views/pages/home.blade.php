@@ -18,7 +18,7 @@
           },
           colors: {
             primary: '#1a1a1a',
-            accent: '#8B6A00',
+            accent: 'rgb(168, 150, 76)',
             navbar: '#191919',
             lightgray: '#F8F9FA'
           },
@@ -42,7 +42,7 @@
       font-family: 'Cairo', 'Tajawal', sans-serif;
     }
     .active {
-      color: #8B6A00;
+      color:rgb(168, 150, 76);
       font-weight: bold;
     }
   </style>
@@ -123,23 +123,20 @@
 
   <!-- Hero Section -->
 
-  <div class="max-w-xl border-r-8 pr-10" style="border-color: #d6b94a;">
-    <h1 class="text-6xl md:text-7xl font-bold mb-4 drop-shadow-lg text-white">رؤية للتجارة</h1>
-    <p class="text-2xl md:text-3xl leading-relaxed drop-shadow-md" style="color: #d6b94a;">
-      رؤية ملهمة وشراكات مستدامة
-    </p>
-    <a href="#about" class="mt-8 inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">تعرف علينا</a>
-  </div>
+ <div class="max-w-xl border-r-8 pr-10 rounded mr-20" style="border-color:rgb(168, 150, 76);">
+  <h1 class="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg text-white">رؤية للتجارة</h1>
+  <p class="text-2xl md:text-4xl leading-relaxed drop-shadow-md" style="color:rgb(168, 150, 76);">
+    رؤية ملهمة وشراكات مستدامة
+  </p>
+</div>
+
+<div class="absolute bottom-0 right-20 translate-y-1/4 h-3 w-1/3 bg-accent z-10"></div>
 </section>
 
 
-
-
-
-  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
-
   <!-- About Section -->
-  <section id="about" class="py-20" data-aos="fade-up">
+  <section id="about" class="py-20">
+  
     <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
       <div class="md:w-1/2 relative">
         <img src="/images/about.jpg" alt="About" class="w-full rounded shadow-lg drop-shadow-[0_8px_20px_rgba(139,106,0,0.5)]">
@@ -152,12 +149,82 @@
         </p>
       </div>
     </div>
+          
   </section>
 
-  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
+<img src="/images/bgshapes.png"
+     class="absolute left-0"
+     style="top: 1500px; width: 400px;"
+     alt="Shape 1">
+
+<img src="/images/bgshapes.png"
+     class="absolute left-0"
+     style="top: 2500px; width: 350px;"
+     alt="Shape 2">
+
+<img src="/images/bgshapes.png"
+     class="absolute left-0"
+     style="top: 3450px; width: 450px;"
+     alt="Shape 3">
+
+
+  <div class="flex items-center justify-start my-16 px-12">
+  <!-- Wider line with padding -->
+  <hr class="border-t-4 border-accent w-[50%]">
+
+  <!-- Dot at the end -->
+  <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
+  
+</div>
+
+
+
+  <!-- Systems Section -->
+<section id="systems" class="scroll-mt-24 py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-accent">شركاتنا</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
+      <img src="/images/logo1.png" alt="Logo 1" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo2.png" alt="Logo 2" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo3.png" alt="Logo 3" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo4.png" alt="Logo 4" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo5.png" alt="Logo 5" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+      <img src="/images/logo6.png" alt="Logo 6" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
+    </div>
+  </div>
+</section>
+
+<div class="flex items-center justify-start my-16 px-12">
+  <!-- Wider line with padding -->
+  <hr class="border-t-4 border-accent w-[50%]">
+
+  <!-- Dot at the end -->
+  <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
+</div>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">الإنجازات</h2>
+            <img src="/images/achievements.png" alt="Achievements" class="mx-auto mb-8">
+
+    </div>
+  </section>
+
+
+
+<div class="flex items-center justify-start my-16 px-12">
+  <!-- Wider line with padding -->
+  <hr class="border-t-4 border-accent w-[50%]">
+
+  <!-- Dot at the end -->
+  <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
+</div>
+
+
 
 <!-- Values Section -->
-<section id="values" class="py-20" data-aos="fade-up">
+<section id="values" class="py-20">
  <br>
  <br>
   <div class="container mx-auto px-4 max-w-7xl text-center">
@@ -223,39 +290,18 @@
   <br>
   <br>
 </section>
-  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="py-20" data-aos="fade-up">
-    <div class="container mx-auto px-4 max-w-4xl text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">الإنجازات</h2>
-            <img src="/images/achievements.png" alt="Achievements" class="mx-auto mb-8">
+<div class="flex items-center justify-start my-16 px-12">
+  <!-- Wider line with padding -->
+  <hr class="border-t-4 border-accent w-[50%]">
 
-    </div>
-  </section>
+  <!-- Dot at the end -->
+  <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
+</div>
 
-  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
-
-  <!-- Systems Section -->
-<section id="systems" class="scroll-mt-24 py-20" data-aos="fade-up">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-accent">شركاتنا</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
-      <img src="/images/logo1.png" alt="Logo 1" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-      <img src="/images/logo2.png" alt="Logo 2" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-      <img src="/images/logo3.png" alt="Logo 3" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-      <img src="/images/logo4.png" alt="Logo 4" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-      <img src="/images/logo5.png" alt="Logo 5" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-      <img src="/images/logo6.png" alt="Logo 6" class="w-full max-w-[120px] transition duration-300 hover:scale-150">
-    </div>
-  </div>
-</section>
-
-
-  <hr class="my-16 border-t-2 border-accent w-3/4 mx-auto">
 
    <!-- CEO Message Section -->
-<section id="ceo" class="py-20" data-aos="fade-up">
+<section id="ceo" class="py-20">
   <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-10">
     
     <!-- CEO Image on the left -->
