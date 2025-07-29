@@ -54,20 +54,6 @@
       easing: 'ease-in-out',
       once: true
     });
-    document.addEventListener('DOMContentLoaded', function () {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('nav a');
-      function activateNav() {
-        let index = sections.length;
-        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-        navLinks.forEach((link) => link.classList.remove('active'));
-        if (navLinks[index]) navLinks[index].classList.add('active');
-      }
-      activateNav();
-      window.addEventListener('scroll', activateNav);
-    });
-  </script>
-  <script>
   document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
@@ -131,9 +117,13 @@
 </div>
 
 <!-- Rotated and Positioned Shape Image -->
-<img src="/images/bgshapes.png"
-     class="absolute right-40 top-[990px] -rotate-90 w-[200px] z-10"
-     alt="Decorative Shape" />
+<section class="relative h-[100vh]">
+  <img src="/images/bgshapes.png"
+       class="absolute right-[10%] top-[72%] -rotate-90 w-[10%] z-10"
+       alt="Decorative Shape" />
+</section>
+
+
 
 <div class="absolute bottom-0 right-20 translate-y-1/4 h-3 w-1/3 bg-accent z-10"></div>
 </section>
@@ -171,7 +161,6 @@
      class="absolute left-0"
      style="top: 3450px; width: 450px;"
      alt="Shape 3">
-
 
   <div class="flex items-center justify-start my-16 px-12">
   <!-- Wider line with padding -->
@@ -341,7 +330,7 @@
   <div class="w-4 h-4 rounded-full bg-accent ml-2"></div>
 </div>
 <!-- Footer Section -->
-<section class="text-black py-16">
+<section id="contact" class="text-black py-16">
   <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
 
     <!-- Left Side: Company Name & Contact Info -->
